@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework3</title>
+</head>
+
+<body>
+    <script>
+        function FavoriteFilm(title) {
+            let film = "Властелин колец";
+            if (title == film) {
+                return true;
+            }
+            else { return false }
+        }
+
+        let title = (prompt('Введите название фильма (например: Титаник)'));
+        while (!FavoriteFilm(title)) {
+            title = (prompt('Попробуйте ещё раз - введите название фильма'))
+        }
+        alert('Отличный выбор!');
+    </script>
+</body>
+
+</html>
